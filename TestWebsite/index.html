@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Swimming Elite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🥌</span>
+                <span class="logo-text">OLYMPIC CURLING</span>
+            </div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#events">Events</a>
+                <a href="#athletes">Athletes</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#results">Results</a>
+                <a href="#booking" class="book-tickets-btn">Book Tickets</a>
+                <a href="#admin-login" class="admin-btn">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">MASTER THE ICE</h1>
+            <p class="hero-subtitle">Experience the World's Greatest Curlers in Action</p>
+
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events" id="events">
+        <div class="container">
+            <h2 class="section-title">Curling Events</h2>
+            <p class="section-desc">12 Elite Events Across All Categories</p>
+
+            <div class="events-grid">
+                <a href="#mens-singles-modal" class="event-card event-link">
+                    <div class="event-icon">🥌</div>
+                    <h3>Men's Singles</h3>
+                    <p>Individual skill and strategy</p>
+                    <span class="event-badge">2 Events</span>
+                    <span class="event-clickable">View Details →</span>
+                </a>
+
+                <a href="#womens-singles-modal" class="event-card event-link">
+                    <div class="event-icon">👩‍🏆</div>
+                    <h3>Women's Singles</h3>
+                    <p>Elite female curlers competing</p>
+                    <span class="event-badge">2 Events</span>
+                    <span class="event-clickable">View Details →</span>
+                </a>
+
+                <a href="#mens-team-modal" class="event-card event-link">
+                    <div class="event-icon">👨‍🤝‍👨</div>
+                    <h3>Men's Team</h3>
+                    <p>Four-person team competitions</p>
+                    <span class="event-badge">3 Events</span>
+                    <span class="event-clickable">View Details →</span>
+                </a>
+
+                <a href="#womens-team-modal" class="event-card event-link">
+                    <div class="event-icon">👩‍🤝‍👩</div>
+                    <h3>Women's Team</h3>
+                    <p>Synchronized teamwork on ice</p>
+                    <span class="event-badge">3 Events</span>
+                    <span class="event-clickable">View Details →</span>
+                </a>
+
+                <a href="#mixed-doubles-modal" class="event-card event-link">
+                    <div class="event-icon">💑</div>
+                    <h3>Mixed Doubles</h3>
+                    <p>Two-person partnership curling</p>
+                    <span class="event-badge">2 Events</span>
+                    <span class="event-clickable">View Details →</span>
+                </a>
+
+                <a href="#wheelchair-modal" class="event-card event-link">
+                    <div class="event-icon">♿</div>
+                    <h3>Wheelchair Curling</h3>
+                    <p>Inclusive paralympic competition</p>
+                    <span class="event-badge">2 Events</span>
+                    <span class="event-clickable">View Details →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Athletes Section -->
+    <section class="athletes" id="athletes">
+        <div class="container">
+            <h2 class="section-title">Elite Champions</h2>
+            <p class="section-desc">Meet the 2024 Olympic Curling Legends</p>
+
+            <div class="athletes-grid">
+                <div class="athlete-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="John McMillan" class="athlete-image">
+                    <div class="athlete-info">
+                        <h3>John McMillan</h3>
+                        <p class="specialty">Skip - Men's Team</p>
+                        <p class="medals">🥇 3x Gold | 🥈 1x Silver</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" alt="Sarah Johnson" class="athlete-image">
+                    <div class="athlete-info">
+                        <h3>Sarah Johnson</h3>
+                        <p class="specialty">Skip - Women's Team</p>
+                        <p class="medals">🥇 2x Gold | 🥉 2x Bronze</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop" alt="Marcus Reid" class="athlete-image">
+                    <div class="athlete-info">
+                        <h3>Marcus Reid</h3>
+                        <p class="specialty">Lead - Mixed Doubles</p>
+                        <p class="medals">🥇 3x Gold | 🥈 1x Silver</p>
+                    </div>
+                </div>
+
+                <div class="athlete-card">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop" alt="Anna Petrov" class="athlete-image">
+                    <div class="athlete-info">
+                        <h3>Anna Petrov</h3>
+                        <p class="specialty">Vice-Skip - Women's Team</p>
+                        <p class="medals">🥇 2x Gold | 🥈 2x Silver</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <h2 class="section-title">Competition Schedule</h2>
+            <p class="section-desc">Upcoming Matches & Finals</p>
+
+            <div class="schedule-container">
+                <div class="schedule-item">
+                    <div class="schedule-date">
+                        <span class="day">28</span>
+                        <span class="month">FEB</span>
+                    </div>
+                    <div class="schedule-event">
+                        <h4>Men's Singles Round Robin</h4>
+                        <p class="time">10:00 AM - 12:00 PM</p>
+                        <p class="venue">Olympic Ice House</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-date">
+                        <span class="day">28</span>
+                        <span class="month">FEB</span>
+                    </div>
+                    <div class="schedule-event">
+                        <h4>Women's Team Preliminary Round</h4>
+                        <p class="time">2:00 PM - 4:30 PM</p>
+                        <p class="venue">Olympic Ice House</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-date">
+                        <span class="day">1</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="schedule-event">
+                        <h4>Mixed Doubles Semi-Finals</h4>
+                        <p class="time">11:00 AM - 1:00 PM</p>
+                        <p class="venue">Olympic Ice House</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-date">
+                        <span class="day">1</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="schedule-event">
+                        <h4>Men's Team Finals</h4>
+                        <p class="time">7:00 PM - 9:30 PM</p>
+                        <p class="venue">Olympic Ice House</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results" id="results">
+        <div class="container">
+            <h2 class="section-title">Latest Results</h2>
+            <p class="section-desc">Recent Championship Winners</p>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-medal">🥇</div>
+                    <h4>Men's Singles Final</h4>
+                    <div class="winner-box">
+                        <p class="winner">John McMillan (Canada)</p>
+                        <p class="time-result">10-8 Points</p>
+                    </div>
+                    <div class="runner-ups">
+                        <p>🥈 Lars Svendsen (Denmark) - 8 Points</p>
+                        <p>🥉 Marco Gaspari (Italy) - 7 Points</p>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-medal">🥇</div>
+                    <h4>Women's Team Championship</h4>
+                    <div class="winner-box">
+                        <p class="winner">Sarah Johnson (Scotland)</p>
+                        <p class="time-result">12 Points</p>
+                    </div>
+                    <div class="runner-ups">
+                        <p>🥈 Anna Petrov (Russia) - 11 Points</p>
+                        <p>🥉 Lisa Mueller (Germany) - 9 Points</p>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-medal">🥇</div>
+                    <h4>Mixed Doubles Final</h4>
+                    <div class="winner-box">
+                        <p class="winner">Reid & Thompson (Canada)</p>
+                        <p class="time-result">9-7 Points</p>
+                    </div>
+                    <div class="runner-ups">
+                        <p>🥈 Hansen & Johnson (Sweden) - 7 Points</p>
+                        <p>🥉 Rossi & Martini (Italy) - 6 Points</p>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-medal">🥇</div>
+                    <h4>Men's Team Gold Medal</h4>
+                    <div class="winner-box">
+                        <p class="winner">Team Canada</p>
+                        <p class="time-result">13 Points</p>
+                    </div>
+                    <div class="runner-ups">
+                        <p>🥈 Team Sweden - 12 Points</p>
+                        <p>🥉 Team Norway - 11 Points</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medal Standings -->
+    <section class="standings">
+        <div class="container">
+            <h2 class="section-title">Medal Standings</h2>
+            <p class="section-desc">Top Performing Nations in Curling</p>
+
+            <div class="standings-table">
+                <div class="table-header">
+                    <div class="col-rank">Rank</div>
+                    <div class="col-nation">Nation</div>
+                    <div class="col-medal">🥇 Gold</div>
+                    <div class="col-medal">🥈 Silver</div>
+                    <div class="col-medal">🥉 Bronze</div>
+                </div>
+
+                <div class="table-row">
+                    <div class="col-rank">1</div>
+                    <div class="col-nation">Canada</div>
+                    <div class="col-medal">8</div>
+                    <div class="col-medal">4</div>
+                    <div class="col-medal">3</div>
+                </div>
+
+                <div class="table-row">
+                    <div class="col-rank">2</div>
+                    <div class="col-nation">Sweden</div>
+                    <div class="col-medal">6</div>
+                    <div class="col-medal">5</div>
+                    <div class="col-medal">4</div>
+                </div>
+
+                <div class="table-row">
+                    <div class="col-rank">3</div>
+                    <div class="col-nation">Scotland</div>
+                    <div class="col-medal">5</div>
+                    <div class="col-medal">4</div>
+                    <div class="col-medal">3</div>
+                </div>
+
+                <div class="table-row">
+                    <div class="col-rank">4</div>
+                    <div class="col-nation">Russia</div>
+                    <div class="col-medal">4</div>
+                    <div class="col-medal">5</div>
+                    <div class="col-medal">3</div>
+                </div>
+
+                <div class="table-row">
+                    <div class="col-rank">5</div>
+                    <div class="col-nation">Norway</div>
+                    <div class="col-medal">3</div>
+                    <div class="col-medal">4</div>
+                    <div class="col-medal">5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p>Celebrating the world's greatest curlers and athletic excellence</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>info@olympiccurling.com | +1 (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <p>Olympic Ice House | Event Year 2024</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Olympic Curling. All Rights Reserved. Ice Excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Event Modals -->
+    <div class="modal" id="mens-singles-modal">
+        <a href="#" class="modal-close">&times;</a>
+        <div class="modal-content">
+            <h2>Men's Singles Events</h2>
+            <div class="event-schedule">
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Men's Singles Round Robin</strong>
+                        <p>Feb 24-26, 10:00 AM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$65 - $150</p>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Men's Singles Finals</strong>
+                        <p>Feb 28, 7:00 PM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$85 - $200</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#booking" class="modal-cta">Purchase Tickets</a>
+        </div>
+    </div>
+
+    <div class="modal" id="womens-singles-modal">
+        <a href="#" class="modal-close">&times;</a>
+        <div class="modal-content">
+            <h2>Women's Singles Events</h2>
+            <div class="event-schedule">
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Women's Singles Round Robin</strong>
+                        <p>Feb 24-26, 2:00 PM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$65 - $150</p>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Women's Singles Finals</strong>
+                        <p>Mar 1, 7:00 PM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$85 - $200</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#booking" class="modal-cta">Purchase Tickets</a>
+        </div>
+    </div>
+
+    <div class="modal" id="mens-team-modal">
+        <a href="#" class="modal-close">&times;</a>
+        <div class="modal-content">
+            <h2>Men's Team Events</h2>
+            <div class="event-schedule">
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Men's Team Round Robin</strong>
+                        <p>Feb 24-27, 10:00 AM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$80 - $200</p>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Men's Team Semi-Finals</strong>
+                        <p>Feb 28, 3:00 PM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$95 - $225</p>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Men's Team Finals</strong>
+                        <p>Mar 1, 7:00 PM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$120 - $280</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#booking" class="modal-cta">Purchase Tickets</a>
+        </div>
+    </div>
+
+    <div class="modal" id="womens-team-modal">
+        <a href="#" class="modal-close">&times;</a>
+        <div class="modal-content">
+            <h2>Women's Team Events</h2>
+            <div class="event-schedule">
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Women's Team Round Robin</strong>
+                        <p>Feb 24-27, 2:00 PM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$80 - $200</p>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Women's Team Semi-Finals</strong>
+                        <p>Feb 28, 7:00 PM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$95 - $225</p>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Women's Team Finals</strong>
+                        <p>Mar 2, 7:00 PM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$120 - $280</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#booking" class="modal-cta">Purchase Tickets</a>
+        </div>
+    </div>
+
+    <div class="modal" id="mixed-doubles-modal">
+        <a href="#" class="modal-close">&times;</a>
+        <div class="modal-content">
+            <h2>Mixed Doubles Events</h2>
+            <div class="event-schedule">
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Mixed Doubles Round Robin</strong>
+                        <p>Feb 26-28, 11:00 AM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$70 - $175</p>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Mixed Doubles Finals</strong>
+                        <p>Mar 2, 3:00 PM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$95 - $230</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#booking" class="modal-cta">Purchase Tickets</a>
+        </div>
+    </div>
+
+    <div class="modal" id="wheelchair-modal">
+        <a href="#" class="modal-close">&times;</a>
+        <div class="modal-content">
+            <h2>Wheelchair Curling Events</h2>
+            <div class="event-schedule">
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Wheelchair Round Robin</strong>
+                        <p>Mar 3-4, 10:00 AM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$60 - $140</p>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-col">
+                        <strong>Wheelchair Finals</strong>
+                        <p>Mar 5, 7:00 PM</p>
+                    </div>
+                    <div class="schedule-col">
+                        <p class="ticket-price">$85 - $190</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#booking" class="modal-cta">Purchase Tickets</a>
+        </div>
+    </div>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Tickets</h2>
+            <p class="section-desc">Secure your seats for the greatest swimming events</p>
+            <div class="booking-form">
+                <form action="#booking-confirmation" method="POST">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" name="customer_name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" name="customer_email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Event *</label>
+                        <select name="event_name" required>
+                            <option value="">Choose an event...</option>
+                            <option value="Men's Singles Finals">Men's Singles Finals</option>
+                            <option value="Women's Singles Finals">Women's Singles Finals</option>
+                            <option value="Men's Team Finals">Men's Team Finals</option>
+                            <option value="Women's Team Finals">Women's Team Finals</option>
+                            <option value="Mixed Doubles Finals">Mixed Doubles Finals</option>
+                            <option value="Wheelchair Curling Finals">Wheelchair Curling Finals</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Number of Tickets *</label>
+                        <input type="number" name="num_tickets" min="1" max="10" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Seating Tier *</label>
+                        <select name="seating_tier" required>
+                            <option value="">Choose seating...</option>
+                            <option value="Standard ($85-120)">Standard ($85-120)</option>
+                            <option value="Premium ($180-250)">Premium ($180-250)</option>
+                            <option value="VIP ($280-400)">VIP ($280-400)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="form-submit">Review & Book Tickets</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Confirmation Modal -->
+    <div class="modal" id="booking-confirmation">
+        <a href="#booking" class="modal-close">&times;</a>
+        <div class="modal-content confirmation-modal">
+            <h2>✓ Booking Confirmed!</h2>
+            <div class="confirmation-details">
+                <div class="detail-box">
+                    <h4>Order Confirmation</h4>
+                    <p><strong>Order ID:</strong> <span>#006</span></p>
+                    <p><strong>Date:</strong> <span>Feb 19, 2026</span></p>
+                </div>
+                <div class="detail-box">
+                    <h4>Customer Details</h4>
+                    <p><strong>Name:</strong> <span>-</span></p>
+                    <p><strong>Email:</strong> <span>-</span></p>
+                </div>
+                <div class="detail-box">
+                    <h4>Booking Details</h4>
+                    <p><strong>Event:</strong> <span>-</span></p>
+                    <p><strong>Tickets:</strong> <span>-</span></p>
+                    <p><strong>Seating:</strong> <span>-</span></p>
+                </div>
+                <div class="detail-box success-box">
+                    <p style="color: #28a745; font-weight: 700; font-size: 1.1rem;">Your booking has been submitted!</p>
+                    <p>Check the admin dashboard to manage all bookings.</p>
+                </div>
+            </div>
+            <div class="confirmation-actions">
+                <a href="#home" class="modal-cta">Continue Shopping</a>
+                <a href="#admin-dashboard" class="modal-cta">View Admin Panel</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Admin Login Modal -->
+    <div class="modal" id="admin-login">
+        <a href="#" class="modal-close">&times;</a>
+        <div class="modal-content admin-login-form">
+            <h2>Admin Login</h2>
+            <form action="#admin-dashboard" class="login-form">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter password" required>
+                </div>
+                <div class="login-hint">
+                    <p>Demo: Username: <strong>Ash</strong> | Password: <strong>1234</strong></p>
+                </div>
+                <button type="submit" class="form-submit">Login to Admin Panel</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <section class="admin-dashboard" id="admin-dashboard">
+        <div class="admin-header">
+            <div class="container">
+                <div class="admin-title">
+                    <h1>🥌 Admin Dashboard</h1>
+                    <p>Manage Olympic Curling Events & Bookings</p>
+                </div>
+                <a href="#home" class="logout-btn">Logout</a>
+            </div>
+        </div>
+
+        <div class="admin-content">
+            <div class="container">
+                <div class="admin-grid">
+                    <!-- Bookings Section -->
+                    <div class="admin-section">
+                        <h2>📋 All Ticket Bookings</h2>
+
+                        <div class="bookings-list">
+                            <div class="booking-item">
+                                <div class="booking-header">
+                                    <h4>Order #001</h4>
+                                    <span class="booking-date">Feb 28, 2024</span>
+                                </div>
+                                <div class="booking-details">
+                                    <p><strong>Event:</strong> Men's Team Finals</p>
+                                    <p><strong>Tickets:</strong> 4</p>
+                                    <p><strong>Tier:</strong> Premium ($225/each)</p>
+                                    <p><strong>Total:</strong> $900</p>
+                                    <p><strong>Customer:</strong> John Smith</p>
+                                    <p><strong>Status:</strong> <span class="status-confirmed">✓ Confirmed</span></p>
+                                </div>
+                            </div>
+
+                            <div class="booking-item">
+                                <div class="booking-header">
+                                    <h4>Order #002</h4>
+                                    <span class="booking-date">Feb 28, 2024</span>
+                                </div>
+                                <div class="booking-details">
+                                    <p><strong>Event:</strong> Women's Team Finals</p>
+                                    <p><strong>Tickets:</strong> 2</p>
+                                    <p><strong>Tier:</strong> VIP ($280/each)</p>
+                                    <p><strong>Total:</strong> $560</p>
+                                    <p><strong>Customer:</strong> Sarah Johnson</p>
+                                    <p><strong>Status:</strong> <span class="status-confirmed">✓ Confirmed</span></p>
+                                </div>
+                            </div>
+
+                            <div class="booking-item">
+                                <div class="booking-header">
+                                    <h4>Order #003</h4>
+                                    <span class="booking-date">Mar 1, 2024</span>
+                                </div>
+                                <div class="booking-details">
+                                    <p><strong>Event:</strong> Mixed Doubles Finals</p>
+                                    <p><strong>Tickets:</strong> 6</p>
+                                    <p><strong>Tier:</strong> Standard ($150/each)</p>
+                                    <p><strong>Total:</strong> $900</p>
+                                    <p><strong>Customer:</strong> Mike Chen</p>
+                                    <p><strong>Status:</strong> <span class="status-confirmed">✓ Confirmed</span></p>
+                                </div>
+                            </div>
+
+                            <div class="booking-item">
+                                <div class="booking-header">
+                                    <h4>Order #004</h4>
+                                    <span class="booking-date">Mar 1, 2024</span>
+                                </div>
+                                <div class="booking-details">
+                                    <p><strong>Event:</strong> Women's Singles Finals</p>
+                                    <p><strong>Tickets:</strong> 3</p>
+                                    <p><strong>Tier:</strong> Premium ($200/each)</p>
+                                    <p><strong>Total:</strong> $600</p>
+                                    <p><strong>Customer:</strong> Emma Davis</p>
+                                    <p><strong>Status:</strong> <span class="status-confirmed">✓ Confirmed</span></p>
+                                </div>
+                            </div>
+
+                            <div class="booking-item">
+                                <div class="booking-header">
+                                    <h4>Order #005</h4>
+                                    <span class="booking-date">Mar 2, 2024</span>
+                                </div>
+                                <div class="booking-details">
+                                    <p><strong>Event:</strong> Men's Singles Finals</p>
+                                    <p><strong>Tickets:</strong> 8</p>
+                                    <p><strong>Tier:</strong> Standard ($150/each)</p>
+                                    <p><strong>Total:</strong> $1,200</p>
+                                    <p><strong>Customer:</strong> Team Canada</p>
+                                    <p><strong>Status:</strong> <span class="status-confirmed">✓ Confirmed</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="admin-stats">
+                            <div class="stat-box">
+                                <h4>Total Bookings</h4>
+                                <p class="stat-number" id="total-bookings">5</p>
+                            </div>
+                            <div class="stat-box">
+                                <h4>Tickets Sold</h4>
+                                <p class="stat-number" id="total-tickets">23</p>
+                            </div>
+                            <div class="stat-box">
+                                <h4>Revenue</h4>
+                                <p class="stat-number" id="total-revenue">$4,420</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Create New Event Section -->
+                    <div class="admin-section">
+                        <h2>➕ Create New Event</h2>
+                        <form class="event-creation-form">
+                            <div class="form-group">
+                                <label>Event Name *</label>
+                                <input type="text" placeholder="e.g., Men's Team Finals" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Event Category *</label>
+                                <select required>
+                                    <option value="">Select category...</option>
+                                    <option value="mens-singles">Men's Singles</option>
+                                    <option value="womens-singles">Women's Singles</option>
+                                    <option value="mens-team">Men's Team</option>
+                                    <option value="womens-team">Women's Team</option>
+                                    <option value="mixed-doubles">Mixed Doubles</option>
+                                    <option value="wheelchair">Wheelchair Curling</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Number of Participants *</label>
+                                <input type="number" placeholder="e.g., 4" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Date *</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Time *</label>
+                                <input type="time" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Venue *</label>
+                                <select required>
+                                    <option value="">Select venue...</option>
+                                    <option value="ice-house-1">Olympic Ice House - Rink 1</option>
+                                    <option value="ice-house-2">Olympic Ice House - Rink 2</option>
+                                    <option value="ice-house-3">Olympic Ice House - Rink 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Standard Ticket Price ($) *</label>
+                                <input type="number" placeholder="e.g., 75" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Premium Ticket Price ($) *</label>
+                                <input type="number" placeholder="e.g., 150" required>
+                            </div>
+                            <div class="form-group">
+                                <label>VIP Ticket Price ($) *</label>
+                                <input type="number" placeholder="e.g., 250" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Available Capacity *</label>
+                                <input type="number" placeholder="e.g., 800" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Event Description</label>
+                                <textarea placeholder="Add event details..." rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="form-submit">Create Event</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
