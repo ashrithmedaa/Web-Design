@@ -1,0 +1,22 @@
+/* style sheet for My Favorite Color website */
+body { /* sets the background color and font for the entire webpage */
+    background-color: rgb(173, 216, 230);
+    font: 24px 'Brush Script MT', cursive, bold;
+    fallback: 24px 'verdana', sans-serif;
+}
+body h1 { /* sets the color, font, size, and alignment for the h1 element */
+    color: rgb(0, 0, 0);
+    font: 'Brush Script MT', cursive, bold;
+    font-size: 50px;
+    text-align: center;
+}
+body h2 {  /* sets the color, font, size, and alignment for the h2 element */
+    color: rgb(0, 0, 255);
+    font: 70px 'Brush Script MT', cursive, bold;
+    text-align: center;
+}
+body p { /* sets the color, font, size, and alignment for the p element */
+    color: rgb(10, 10, 92);
+    font: 30px 'Arial', bold;
+    text-align: center;
+}

@@ -1024,6 +1024,14 @@ section {
     font-weight: 700;
 }
 
+/* error shown when authentication fails */
+.error-message {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
 .admin-dashboard {
     display: none;
     min-height: 100vh;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olympic Swimming Elite</title>
     <link rel="stylesheet" href="style.css">
-</head>
+</head> 
 <body>
     <!-- Navigation Header -->
     <header class="header">
@@ -618,15 +618,16 @@
         <a href="#" class="modal-close">&times;</a>
         <div class="modal-content admin-login-form">
             <h2>Admin Login</h2>
-            <form action="#admin-dashboard" class="login-form">
+            <form id="adminLoginForm" class="login-form">
                 <div class="form-group">
                     <label>Username</label>
-                    <input type="text" placeholder="Enter username" required>
+                    <input id="adminUsername" type="text" placeholder="Enter username" required>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <input type="password" placeholder="Enter password" required>
+                    <input id="adminPassword" type="password" placeholder="Enter password" required>
                 </div>
+                <div id="loginError" class="error-message" style="display:none;">Invalid username or password</div>
                 <div class="login-hint">
                     <p>Demo: Username: <strong>Ash</strong> | Password: <strong>1234</strong></p>
                 </div>
@@ -815,6 +816,40 @@
             </div>
         </div>
     </section>
+
+<script>
+// simple client-side authentication for demo admin panel
+(function() {
+    var form = document.getElementById('adminLoginForm');
+    if (!form) return;
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var user = document.getElementById('adminUsername').value.trim();
+        var pass = document.getElementById('adminPassword').value;
+        var error = document.getElementById('loginError');
+        // hardcoded credentials for demonstration
+        if (user === 'Ash' && pass === '1234') {
+            // clear inputs and hide error
+            error.style.display = 'none';
+            form.reset();
+            sessionStorage.setItem('isAdmin','true');
+            window.location.hash = 'admin-dashboard';
+        } else {
+            error.textContent = 'Incorrect username or password';
+            error.style.display = 'block';
+        }
+    });
+
+    // prevent unauthorized hash navigation
+    window.addEventListener('hashchange', function() {
+        if (location.hash === '#admin-dashboard' && sessionStorage.getItem('isAdmin') !== 'true') {
+            alert('Please login to access the admin panel');
+            location.hash = 'home';
+        }
+    });
+
+})();
+</script>
 
 </body>
 </html>
