@@ -1,0 +1,13 @@
+body {
+    background-color: greenyellow;
+}
+h1 {
+    text-align: center;
+    color: skyblue;
+}
+
+p {
+    text-align: center;
+    font-size: large;
+    font: 16px 'Times New Roman', bold;
+}
