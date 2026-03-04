@@ -1,0 +1,12 @@
+body {
+    background-color: honeydew;
+}
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hotpink;
+
+}
