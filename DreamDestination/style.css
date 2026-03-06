@@ -1,13 +1,16 @@
 body {
-    background-color: greenyellow;
+    background-color: rgb(43, 43, 114);
 }
 h1 {
     text-align: center;
-    color: skyblue;
+    color: #FFFDD0;
+    font: 60px 'Allura', bold;
+    
 }
 
 p {
     text-align: center;
+    color: #f2ffd0bc;
     font-size: large;
     font: 16px 'Times New Roman', bold;
 }
