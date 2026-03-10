@@ -14,3 +14,13 @@ p {
     font-size: large;
     font: 16px 'Times New Roman', bold;
 }
+
+a:hover {
+    color: #FFFDD0;
+}
+
+a{
+    text-align: center;
+    color: antiquewhite;
+    text-decoration: none;
+}
