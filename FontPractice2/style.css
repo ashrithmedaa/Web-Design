@@ -1,0 +1,9 @@
+@font-face {
+    font-family: GoodFont;
+    src: url(Scary\ Social\ Media.ttf);
+}
+
+h1 {
+    font-family:  'GoodFont', bold;
+    font-size: xx-large;
+}
