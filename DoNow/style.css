@@ -29,4 +29,29 @@
  .Border {
      font-size: 25px;
      border: 4px dotted black;
+     padding: 8px;
+ }
+
+ .Red {
+     width: 100px;
+     height: 100px;
+     background-color: red;
+     display: inline-block;
+    margin: 5px;
+ }
+
+ .Green {
+     width: 100px;
+     height: 100px;
+     background-color: green;
+     display: inline-block;
+     margin: 5px;
+ }
+
+ .Blue {
+     width: 100px;
+     height: 100px;
+     background-color: blue;
+     display: inline-block;
+     margin: 5px;
  }
