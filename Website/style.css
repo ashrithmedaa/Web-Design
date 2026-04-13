@@ -10,6 +10,11 @@ body {
     gap: 20px;            /* space between image and text */
 }
 
+.caption {
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+}
+
 h1 {
     color: black;
     font-family: "Creepster", cursive;
