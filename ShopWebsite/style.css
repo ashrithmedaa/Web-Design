@@ -1,0 +1,42 @@
+body {
+    background-image: url("Assorted-donuts-on-pastel-blue-background-1400.jpeg");
+  }
+h1{ 
+    text-align: center;
+    color: pink; 
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+.Chocolate {
+    display: flex;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+    background-color: #333333;
+  }
+  
+  ul li {
+    float: left;
+  }
+  
+  ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    background-color: #111111; 
+}
+
+
+  
